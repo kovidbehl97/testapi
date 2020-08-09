@@ -30,7 +30,7 @@
   </body>
 
   <script>
-    window.apikey = 'D-NCv3rmDubJgdZpS6vgpwxWkCFjhhyWu1Y0mdjLeV8'
+    window.apikey = 'fyXT4ICDo2XntVRqlOCYxwDPFxcIMBhM9N7u5l6y6HQ'
 
     function moveMapToIndia(map){
       map.setCenter({lat:28.7041, lng:77.1025});
@@ -109,7 +109,7 @@
           at: `${lat},${lng}`
         }, (result) => {
           result.items.forEach((item) => {
-            alert(item.address.district +","+ item.address.city)
+            document.getElementById('loca').innerHTML = item.address.district +","+ item.address.city
           });
       })
     },function(){enableHighAccuracy:true})}
